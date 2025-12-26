@@ -1,0 +1,110 @@
+/* ====== Google Fonts ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d9c3da;
+    color: #d4459b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 20px 0 10px 0;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.score-board h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* ====== Button Container ====== */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.line-one, .linetwo {
+    display: flex;
+    gap: 20px;
+}
+
+/* ====== Buttons ====== */
+.btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* Colors */
+.red {
+    background-color:#ff4c4c;
+}
+
+.yellow {
+    background-color: #b5b179;
+}
+
+.green {
+    background-color: #66a066;
+}
+
+.purple {
+    background-color: #826d93;
+}
+
+/* Flash animations */
+.flash {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #fff;
+}
+
+.userflash {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #000;
+}
+
+/* Game Over Effect */
+.game-over {
+    background-color: #ff4c4c;
+    transition: background-color 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .score-board {
+        gap: 20px;
+    }
+}
